@@ -1,0 +1,25 @@
+{
+  "experiment": "weak_scaling",
+  "n_workers": 8,
+  "n_days": 4,
+  "total_elapsed_s": 2921.7,
+  "timings": {
+    "stage1_data_load": 25.19,
+    "stage2_colocation": 73.36,
+    "stage3_era5_join": 37.51,
+    "stage4_labelling": 923.32,
+    "stage5_gbt": 1862.32
+  },
+  "metrics": {
+    "so2_input_rows": 37012843,
+    "no2_input_rows": 32768724,
+    "era5_input_rows": 99671040,
+    "coloc_rows": 126954868,
+    "era5_joined_rows": 126954868,
+    "labelled_rows": 10831415,
+    "volcanic_rows": 1249892,
+    "industrial_rows": 9581523,
+    "auc_roc": 0.9995,
+    "f1": 0.9907
+  }
+}
